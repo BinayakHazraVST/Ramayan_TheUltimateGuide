@@ -134,50 +134,49 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Advanced NLP Tokenizer
+    // Precompiled regex for advanced NLP Tokenizer
+    const stopWords = new Set(['i', 'am', 'is', 'are', 'the', 'a', 'an', 'my', 'feel', 'very', 'so', 'to', 'and', 'but', 'for', 'with', 'in', 'of', 'from', 'that', 'this', 'me', 'please', 'can', 'you']);
+    const punctuationRegex = /[^a-z\s]/g;
+    const whitespaceRegex = /\s+/;
+    const stemRules = [
+        [/ing$/, ''], [/tion$/, 'te'], [/ed$/, ''],
+        [/ness$/, ''], [/ful$/, ''], [/ly$/, ''], [/es$/, ''], [/s$/, '']
+    ];
+
     function processInput(rawText) {
-        const stop_words = new Set(['i', 'am', 'is', 'are', 'the', 'a', 'an', 'my', 'feel', 'very', 'so', 'to', 'and', 'but', 'for', 'with', 'in', 'of', 'from', 'that', 'this', 'me', 'please', 'can', 'you']);
-        
-        // Custom stemming rules for common suffixes
-        const stemRules = [
-            [/ing$/, ''], [/tion$/, 'te'], [/ed$/, ''],
-            [/ness$/, ''], [/ful$/, ''], [/ly$/, ''], [/es$/, ''], [/s$/, '']
-        ];
-        
         return rawText
             .toLowerCase()
-            .replace(/[^a-z\s]/g, '') // remove punctuation
-            .split(/\s+/)
-            .filter(w => w.length > 2 && !stop_words.has(w))
+            .replace(punctuationRegex, '') // remove punctuation
+            .split(whitespaceRegex)
+            .filter(w => w.length > 2 && !stopWords.has(w))
             .map(word => {
-                let stemmed = word;
                 for (const [pattern, replacement] of stemRules) {
-                    if (pattern.test(stemmed)) {
-                        stemmed = stemmed.replace(pattern, replacement);
-                        break;
+                    if (pattern.test(word)) {
+                        return word.replace(pattern, replacement);
                     }
                 }
-                return stemmed;
+                return word;
             });
     }
 
-    // Levenshtein distance for spell correction & fuzzy matching
+    // Optimized Levenshtein distance (O(min(N, M)) space instead of O(N*M))
     function levenshtein(a, b) {
         if(a.length === 0) return b.length;
         if(b.length === 0) return a.length;
-        const matrix = [];
-        for(let i = 0; i <= b.length; i++) matrix[i] = [i];
-        for(let j = 0; j <= a.length; j++) matrix[0][j] = j;
-        for(let i = 1; i <= b.length; i++) {
-            for(let j = 1; j <= a.length; j++) {
-                if(b.charAt(i-1) === a.charAt(j-1)) {
-                    matrix[i][j] = matrix[i-1][j-1];
-                } else {
-                    matrix[i][j] = Math.min(matrix[i-1][j-1] + 1, Math.min(matrix[i][j-1] + 1, matrix[i-1][j] + 1));
-                }
+        if(a.length > b.length) [a, b] = [b, a]; // ensure 'a' is shorter for less memory
+        
+        let row = Array(a.length + 1).fill(0).map((_, i) => i);
+        
+        for (let i = 1; i <= b.length; i++) {
+            let prev = i;
+            for (let j = 1; j <= a.length; j++) {
+                let val = (b[i - 1] === a[j - 1]) ? row[j - 1] : Math.min(row[j - 1] + 1, prev + 1, row[j] + 1);
+                row[j - 1] = prev;
+                prev = val;
             }
+            row[a.length] = prev;
         }
-        return matrix[b.length][a.length];
+        return row[a.length];
     }
 
     // Weighted Scorer with Fuzzy Match
