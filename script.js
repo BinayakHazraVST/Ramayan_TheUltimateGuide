@@ -52,6 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Cover Page Logic (Index Only) ---
     if(openBookBtn && coverPage && mainApp) {
+        // Direct navigation to main app if hash is present
+        if(window.location.hash === '#main-app') {
+            coverPage.classList.add('hidden');
+            mainApp.classList.remove('hidden');
+        }
+
         openBookBtn.addEventListener('click', () => {
             coverPage.classList.add('open');
             setTimeout(() => {
