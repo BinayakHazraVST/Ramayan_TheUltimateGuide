@@ -96,6 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function showStory(story) {
         dTitle.textContent = story.title;
         dKanda.textContent = story.kanda;
+        dImage.loading = "lazy";
+        dImage.decoding = "async";
         dImage.src = story.imageUrl;
         dText.textContent = story.summary;
         
@@ -296,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.add('character-card');
             card.innerHTML = `
                 <div class="character-img-container">
-                    <img src="${char.imageUrl}" alt="${char.name}">
+                    <img src="${char.imageUrl}" alt="${char.name}" loading="lazy" decoding="async">
                 </div>
                 <div class="character-info">
                     <h4>${char.name}</h4>
