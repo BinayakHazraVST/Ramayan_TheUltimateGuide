@@ -41,11 +41,11 @@ Since this is a purely frontend application with no backend or build steps requi
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/TheUltimateGuide.git
+   git clone https://github.com/yourusername/Ramayan_TheUltimateGuide.git
    ```
 2. **Navigate to the directory:**
    ```bash
-   cd TheUltimateGuide
+   cd Ramayan_TheUltimateGuide
    ```
 3. **Run the app:**
    Simply open `index.html` in your favorite web browser. 
