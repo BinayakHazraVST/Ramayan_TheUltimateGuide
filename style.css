@@ -14,7 +14,7 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: url('assets/ramayan_bg.png') center/cover no-repeat;
+    background: url('assets/ramayan_bg.webp') center/cover no-repeat;
     transition: transform var(--transition-slow), opacity var(--transition-slow);
     overflow: hidden; /* Prevent decor bleeding */
     perspective: 1000px;

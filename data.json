@@ -5,56 +5,56 @@
       "title": "Birth of the Princes",
       "kanda": "Bala Kanda",
       "summary": "King Dasharatha of Ayodhya performed the Putrakameshti Yagna to have heirs. The gods, troubled by the demon king Ravana, requested Lord Vishnu to incarnate on earth. Thus, Rama, Bharata, Lakshmana, and Shatrughna were born to Dasharatha's queens Kaushalya, Kaikeyi, and Sumitra.",
-      "imageUrl": "assets/ram_janma.png"
+      "imageUrl": "assets/ram_janma.webp"
     },
     {
       "id": "bala_kanda_marriage",
       "title": "Sita Swayamvara",
       "kanda": "Bala Kanda",
       "summary": "Sage Vishwamitra took Rama and Lakshmana to Mithila, the kingdom of King Janaka. Janaka had organized a Swayamvara for his daughter Sita, promising her hand to the one who could string the divine bow of Shiva. Rama easily lifted, strung, and broke the immense bow, winning Sita's hand. His brothers also married Janaka's other daughters and nieces.",
-      "imageUrl": "assets/sita_swayamvar.png"
+      "imageUrl": "assets/sita_swayamvar.webp"
     },
     {
       "id": "ayodhya_kanda_exile",
       "title": "The Exile of Rama",
       "kanda": "Ayodhya Kanda",
       "summary": "King Dasharatha planned to crown Rama as his successor. However, Queen Kaikeyi, manipulated by her maid Manthara, demanded two boons Dasharatha had promised her earlier: the crowning of her son Bharata and the exile of Rama to the forest for 14 years. To honor his father's word, Rama immediately left for the forest, accompanied by his devoted wife Sita and loyal brother Lakshmana.",
-      "imageUrl": "assets/rama_exile.png"
+      "imageUrl": "assets/rama_exile.webp"
     },
     {
       "id": "aranya_kanda_abduction",
       "title": "The Abduction of Sita",
       "kanda": "Aranya Kanda",
       "summary": "In the Dandaka forest, the demoness Shurpanakha tried to seduce Rama and Lakshmana, and attacked Sita when rejected. Lakshmana cut off her nose and ears. To avenge her, Ravana, her brother and the demon king of Lanka, lured Rama and Lakshmana away using a magical golden deer (Maricha) and abducted Sita, taking her to Lanka in his flying chariot, Pushpaka Vimana.",
-      "imageUrl": "assets/sita_abduction.png"
+      "imageUrl": "assets/sita_abduction.webp"
     },
     {
       "id": "kishkindha_kanda_alliance",
       "title": "Alliance with Sugriva",
       "kanda": "Kishkindha Kanda",
       "summary": "Searching for Sita, Rama and Lakshmana reached Kishkindha and met the Vanara (monkey) king Sugriva and his devoted minister Hanuman. Rama helped Sugriva regain his kingdom from his brother Vali. In return, Sugriva pledged his Vanara army to assist Rama in finding and rescuing Sita.",
-      "imageUrl": "assets/sugriva_alliance.png"
+      "imageUrl": "assets/sugriva_alliance.webp"
     },
     {
       "id": "sundara_kanda_hanuman",
       "title": "Hanuman's Leap to Lanka",
       "kanda": "Sundara Kanda",
       "summary": "Hanuman leaped across the ocean to Lanka to search for Sita. He found her captive in the Ashoka Vatika, grieving but steadfast in her devotion to Rama. He gave her Rama's ring to prove his identity, assured her of rescue, and then set the city of Lanka on fire before returning with news of her whereabouts.",
-      "imageUrl": "assets/hanuman_lanka.png"
+      "imageUrl": "assets/hanuman_lanka.webp"
     },
     {
       "id": "yuddha_kanda_war",
       "title": "The Great War to Rescue Sita",
       "kanda": "Yuddha Kanda",
       "summary": "Rama, with the help of the Vanara army, built a bridge (Ram Setu) across the ocean to Lanka. A fierce war ensued between Rama's forces and Ravana's demon army. After many intense battles resulting in the deaths of formidable warriors like Kumbhakarna and Indrajit, Rama finally defeated and killed Ravana, rescuing Sita.",
-      "imageUrl": "assets/great_war.png"
+      "imageUrl": "assets/great_war.webp"
     },
     {
       "id": "yuddha_kanda_return",
       "title": "Return to Ayodhya and Coronation",
       "kanda": "Yuddha Kanda",
       "summary": "After validating Sita's purity through Agnipariksha, Rama, Sita, and Lakshmana, along with their allies, returned to Ayodhya at the end of their 14-year exile. They were welcomed with immense joy and lights (celebrated as Diwali). Rama was crowned King, inaugurating Ram Rajya, an era of unparalleled peace, justice, and prosperity.",
-      "imageUrl": "assets/rama_coronation.png"
+      "imageUrl": "assets/rama_coronation.webp"
     }
   ],
   "inspirations": [
@@ -221,7 +221,7 @@
       "name": "Rama",
       "role": "The seventh avatar of Vishnu, King of Ayodhya, and the central hero of the Ramayana.",
       "traits": ["Righteous (Dharmic)", "Compassionate", "Ideal Son/King/Husband", "Courageous", "Equanimous"],
-      "imageUrl": "assets/ram_card.png",
+      "imageUrl": "assets/ram_card.webp",
       "teachings": "The paramount importance of upholding Dharma (duty and righteousness) regardless of personal cost. True leadership is servant leadership. Remaining unaffected by extremes of joy and sorrow."
     },
     {
@@ -229,7 +229,7 @@
       "name": "Sita",
       "role": "An avatar of Goddess Lakshmi, daughter of King Janaka, and beloved wife of Rama.",
       "traits": ["Devoted", "Resilient", "Pure-hearted", "Courageous", "Sacrificing"],
-      "imageUrl": "assets/sita_card.png",
+      "imageUrl": "assets/sita_card.webp",
       "teachings": "Unwavering devotion and strength in adversity. The power of purity and holding onto one's principles even in the face of grave danger."
     },
     {
@@ -237,7 +237,7 @@
       "name": "Hanuman",
       "role": "A Vanara, an ardent devotee of Rama, and a central figure in the Ramayana.",
       "traits": ["Devout", "Powerful", "Humble", "Wise", "Selfless"],
-      "imageUrl": "assets/hanuman_card.png",
+      "imageUrl": "assets/hanuman_card.webp",
       "teachings": "The incredible power of selfless service (Seva) and devotion (Bhakti). True strength is coupled with profound humility. Realizing your infinite potential."
     },
     {
@@ -245,7 +245,7 @@
       "name": "Lakshmana",
       "role": "Rama's younger brother and constant companion during his exile.",
       "traits": ["Fiercely Loyal", "Protective", "Quick-tempered but obedient", "Sacrificing"],
-      "imageUrl": "assets/lakshmana.png",
+      "imageUrl": "assets/lakshmana.webp",
       "teachings": "The essence of brotherly love and loyalty. The willingness to sacrifice personal comfort for the sake of those you love and look up to."
     },
     {
@@ -253,7 +253,7 @@
       "name": "Bharata",
       "role": "Rama's younger brother who ruled Ayodhya as Rama's regent during his exile.",
       "traits": ["Righteous", "Selfless", "Devoted brother", "Detached"],
-      "imageUrl": "assets/bharata.png",
+      "imageUrl": "assets/bharata.webp",
       "teachings": "Duty over desire. The rejection of ill-gotten gains and the profound respect for rightful hierarchy and fraternal bonds."
     },
     {
@@ -261,7 +261,7 @@
       "name": "Ravana",
       "role": "The powerful Rakshasa (demon) king of Lanka and the primary antagonist.",
       "traits": ["Learned", "Powerful", "Arrogant (Ahankara)", "Lustful", "Egotistical"],
-      "imageUrl": "assets/ravana.png",
+      "imageUrl": "assets/ravana.webp",
       "teachings": "A powerful cautionary tale. Intelligence and power, when coupled with unchecked ego and desire, inevitably lead to self-destruction."
     },
     {
@@ -269,7 +269,7 @@
       "name": "Jatayu",
       "role": "A demi-god in the form of a vulture who bravely fought Ravana to rescue Sita.",
       "traits": ["Brave", "Loyal", "Self-sacrificing", "Righteous"],
-      "imageUrl": "assets/jatayu.png",
+      "imageUrl": "assets/jatayu.webp",
       "teachings": "It is our duty to fight injustice, even against overwhelming odds and at the cost of our own lives. Effort in a noble cause is never wasted."
     },
      {
@@ -277,7 +277,7 @@
       "name": "Vibhishana",
       "role": "Ravana's righteous younger brother who defected to Rama's side.",
       "traits": ["Righteous", "Courageous (moral courage)", "Devout", "Wise"],
-      "imageUrl": "assets/vibhishana.png",
+      "imageUrl": "assets/vibhishana.webp",
       "teachings": "Dharma (righteousness) supersedes familial bonds. The courage to stand alone against wrong, even when it means opposing one's own kin."
     }
   ]
