@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noble Characters | Ramayan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="characters.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="back-btn-container fade-in">
+        <a href="index.html#main-app" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Shrine</a>
+    </div>
+
+    <div class="page-container fade-in">
+        <header class="page-header">
+            <h2>Figures of Righteousness</h2>
+            <p>Learn from the noble characters of the Epic.</p>
+        </header>
+
+        <main class="content-container">
+            <section id="characters" class="app-section">
+                <!-- Character cards populated by JS -->
+                <div id="character-grid" class="character-grid">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Character Modal Overlay -->
+    <div id="character-modal" class="modal hidden">
+        <div class="modal-content glass-panel">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <div class="modal-header">
+                <img id="modal-img" src="" alt="Character Visual">
+                <h3 id="modal-name"></h3>
+            </div>
+            <div class="modal-body">
+                <div class="trait-row">
+                    <div class="trait-icon"><i class="fa-solid fa-id-badge"></i></div>
+                    <div>
+                        <strong>Sacred Role</strong>
+                        <p id="modal-role"></p>
+                    </div>
+                </div>
+                <div class="trait-row">
+                    <div class="trait-icon"><i class="fa-solid fa-star"></i></div>
+                    <div>
+                        <strong>Dharma / Traits</strong>
+                        <p id="modal-traits"></p>
+                    </div>
+                </div>
+                <div class="teachings-box">
+                    <h4><i class="fa-solid fa-scroll"></i> Core Teachings</h4>
+                    <p id="modal-teachings"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+{
+  "stories": [
+    {
+      "id": "bala_kanda_birth",
+      "title": "Birth of the Princes",
+      "kanda": "Bala Kanda",
+      "summary": "King Dasharatha of Ayodhya performed the Putrakameshti Yagna to have heirs. The gods, troubled by the demon king Ravana, requested Lord Vishnu to incarnate on earth. Thus, Rama, Bharata, Lakshmana, and Shatrughna were born to Dasharatha's queens Kaushalya, Kaikeyi, and Sumitra.",
+      "imageUrl": "assets/ram_janma.png"
+    },
+    {
+      "id": "bala_kanda_marriage",
+      "title": "Sita Swayamvara",
+      "kanda": "Bala Kanda",
+      "summary": "Sage Vishwamitra took Rama and Lakshmana to Mithila, the kingdom of King Janaka. Janaka had organized a Swayamvara for his daughter Sita, promising her hand to the one who could string the divine bow of Shiva. Rama easily lifted, strung, and broke the immense bow, winning Sita's hand. His brothers also married Janaka's other daughters and nieces.",
+      "imageUrl": "assets/sita_swayamvar.png"
+    },
+    {
+      "id": "ayodhya_kanda_exile",
+      "title": "The Exile of Rama",
+      "kanda": "Ayodhya Kanda",
+      "summary": "King Dasharatha planned to crown Rama as his successor. However, Queen Kaikeyi, manipulated by her maid Manthara, demanded two boons Dasharatha had promised her earlier: the crowning of her son Bharata and the exile of Rama to the forest for 14 years. To honor his father's word, Rama immediately left for the forest, accompanied by his devoted wife Sita and loyal brother Lakshmana.",
+      "imageUrl": "assets/rama_exile.png"
+    },
+    {
+      "id": "aranya_kanda_abduction",
+      "title": "The Abduction of Sita",
+      "kanda": "Aranya Kanda",
+      "summary": "In the Dandaka forest, the demoness Shurpanakha tried to seduce Rama and Lakshmana, and attacked Sita when rejected. Lakshmana cut off her nose and ears. To avenge her, Ravana, her brother and the demon king of Lanka, lured Rama and Lakshmana away using a magical golden deer (Maricha) and abducted Sita, taking her to Lanka in his flying chariot, Pushpaka Vimana.",
+      "imageUrl": "assets/sita_abduction.png"
+    },
+    {
+      "id": "kishkindha_kanda_alliance",
+      "title": "Alliance with Sugriva",
+      "kanda": "Kishkindha Kanda",
+      "summary": "Searching for Sita, Rama and Lakshmana reached Kishkindha and met the Vanara (monkey) king Sugriva and his devoted minister Hanuman. Rama helped Sugriva regain his kingdom from his brother Vali. In return, Sugriva pledged his Vanara army to assist Rama in finding and rescuing Sita.",
+      "imageUrl": "assets/sugriva_alliance.png"
+    },
+    {
+      "id": "sundara_kanda_hanuman",
+      "title": "Hanuman's Leap to Lanka",
+      "kanda": "Sundara Kanda",
+      "summary": "Hanuman leaped across the ocean to Lanka to search for Sita. He found her captive in the Ashoka Vatika, grieving but steadfast in her devotion to Rama. He gave her Rama's ring to prove his identity, assured her of rescue, and then set the city of Lanka on fire before returning with news of her whereabouts.",
+      "imageUrl": "assets/hanuman_lanka.png"
+    },
+    {
+      "id": "yuddha_kanda_war",
+      "title": "The Great War to Rescue Sita",
+      "kanda": "Yuddha Kanda",
+      "summary": "Rama, with the help of the Vanara army, built a bridge (Ram Setu) across the ocean to Lanka. A fierce war ensued between Rama's forces and Ravana's demon army. After many intense battles resulting in the deaths of formidable warriors like Kumbhakarna and Indrajit, Rama finally defeated and killed Ravana, rescuing Sita.",
+      "imageUrl": "assets/great_war.png"
+    },
+    {
+      "id": "yuddha_kanda_return",
+      "title": "Return to Ayodhya and Coronation",
+      "kanda": "Yuddha Kanda",
+      "summary": "After validating Sita's purity through Agnipariksha, Rama, Sita, and Lakshmana, along with their allies, returned to Ayodhya at the end of their 14-year exile. They were welcomed with immense joy and lights (celebrated as Diwali). Rama was crowned King, inaugurating Ram Rajya, an era of unparalleled peace, justice, and prosperity.",
+      "imageUrl": "assets/rama_coronation.png"
+    }
+  ],
+  "inspirations": [
+    {
+      "id": "exile",
+      "synonymClusters": [
+        { "weight": 3, "words": ["lost", "directionless", "aimless", "stuck", "guide", "help"] },
+        { "weight": 2, "words": ["confused", "unsure", "uncertain", "doubtful", "nowhere"] },
+        { "weight": 1, "words": ["purpose", "path", "future", "what", "find"] }
+      ],
+      "antiKeywords": ["happy", "found", "clear", "success"],
+      "instance": "Rama's exile",
+      "story": "When told of his 14-year exile right before his coronation, Rama did not express confusion or despair. He peacefully accepted his dharma (duty) to fulfill his father's word.",
+      "teaching": "When life takes an unexpected turn, stay grounded in your core values and duties. Acceptance of the present reality is the first step toward finding your way.",
+      "character": "Rama"
+    },
+    {
+      "id": "betrayal",
+      "synonymClusters": [
+        { "weight": 3, "words": ["betrayed", "cheated", "backstabbed", "deceived"] },
+        { "weight": 2, "words": ["unfair", "unjust", "wronged", "hurt"] },
+        { "weight": 1, "words": ["friend", "trust", "broken", "lied"] }
+      ],
+      "antiKeywords": ["fair", "loyal", "happy", "trusting"],
+      "instance": "Sugriva's betrayal by Vali",
+      "story": "Sugriva was exiled and his wife taken by his brother Vali due to a misunderstanding. Despite the profound betrayal, Sugriva sought right alliances (Rama) to restore justice.",
+      "teaching": "Betrayal hurts immensely, but do not let it isolate you. Seek genuine support, stand up for what is right, and justice can be restored.",
+      "character": "Sugriva"
+    },
+    {
+      "id": "grief",
+      "synonymClusters": [
+        { "weight": 3, "words": ["grief", "heartbroken", "devastated", "loss"] },
+        { "weight": 2, "words": ["sad", "depressed", "sorrow", "crying", "miserable"] },
+        { "weight": 1, "words": ["miss", "missing", "alone", "lonely"] }
+      ],
+      "antiKeywords": ["joy", "happy", "excited", "thrilled"],
+      "instance": "Sita's captivity in Ashoka Vatika",
+      "story": "Sita was held captive by Ravana, separated from Rama. Despite the immense grief and constant threats, she never lost hope or compromised her values.",
+      "teaching": "In times of deep sorrow, hold onto hope and your inner strength. Even in the darkest places, steadfast faith can sustain you until light returns.",
+      "character": "Sita"
+    },
+    {
+      "id": "fear",
+      "synonymClusters": [
+        { "weight": 3, "words": ["scared", "terrified", "afraid", "fear", "panic"] },
+        { "weight": 2, "words": ["anxious", "nervous", "worried", "anxiety", "intimidated"] },
+        { "weight": 1, "words": ["weak", "helpless", "timid", "hesitant"] }
+      ],
+      "antiKeywords": ["brave", "courageous", "strong", "confident"],
+      "instance": "Hanuman forgetting his powers",
+      "story": "Hanuman had forgotten his immense strength due to a childhood curse. When Jambavan reminded him of who he truly was, his fear vanished, and he achieved the impossible leap to Lanka.",
+      "teaching": "Often, your fear stems from forgetting your true potential. Remind yourself of your past strengths and the boundless capability within you.",
+      "character": "Hanuman"
+    },
+    {
+      "id": "anger",
+      "synonymClusters": [
+        { "weight": 3, "words": ["angry", "rage", "furious", "mad", "livid"] },
+        { "weight": 2, "words": ["frustrated", "annoyed", "irritated", "pissed"] },
+        { "weight": 1, "words": ["temper", "outrage", "unfair", "hate"] }
+      ],
+      "antiKeywords": ["calm", "peaceful", "happy", "relaxed"],
+      "instance": "Lakshmana's frequent anger",
+      "story": "Lakshmana was fiercely loyal but quick to anger, often ready to fight perceived injustices immediately. Rama repeatedly had to calm him down, teaching him the value of patience and measured response.",
+      "teaching": "Anger, even when justified, can blur judgment. Channel your passion into constructive action, guided by patience and higher wisdom.",
+      "character": "Lakshmana"
+    },
+    {
+      "id": "duty",
+      "synonymClusters": [
+        { "weight": 3, "words": ["overwhelmed", "pressured", "burdened", "stressed"] },
+        { "weight": 2, "words": ["duty", "responsibility", "work", "expectations"] },
+        { "weight": 1, "words": ["heavy", "hard", "tired", "exhausted"] }
+      ],
+      "antiKeywords": ["free", "relaxed", "vacation", "bored"],
+      "instance": "Bharata ruling Ayodhya",
+      "story": "Bharata refused to take the throne rightfully given to him by his mother's manipulation. Instead, he placed Rama's sandals on the throne and ruled as a temporary caretaker, living an ascetic life, prioritizing his brother's right over his own power.",
+      "teaching": "True leadership and duty involve selflessness. Fulfilling your responsibilities without attachment to power brings honor and internal peace.",
+      "character": "Bharata"
+    },
+    {
+      "id": "ego",
+      "synonymClusters": [
+        { "weight": 3, "words": ["ego", "arrogance", "pride", "narcissism", "superior"] },
+        { "weight": 2, "words": ["stubborn", "unyielding", "bossy", "selfish"] },
+        { "weight": 1, "words": ["me", "myself", "always", "right"] }
+      ],
+      "antiKeywords": ["humble", "modest", "open", "listening"],
+      "instance": "Ravana's downfall",
+      "story": "Ravana was incredibly knowledgeable and powerful, but his enormous ego and pride led him to abduct Sita and ignore all wise counsel to return her, ultimately leading to the destruction of his kingdom and his own death.",
+      "teaching": "Unchecked ego and arrogance blind you to reason and ultimately lead to your own downfall, regardless of your capabilities or achievements.",
+      "character": "Ravana"
+    },
+    {
+      "id": "dilemma",
+      "synonymClusters": [
+        { "weight": 3, "words": ["dilemma", "conflict", "torn", "undecided"] },
+        { "weight": 2, "words": ["choice", "decision", "hard", "difficult"] },
+        { "weight": 1, "words": ["wrong", "right", "choose", "what"] }
+      ],
+      "antiKeywords": ["clear", "obvious", "easy", "decided"],
+      "instance": "Vibhishana leaving Ravana",
+      "story": "Vibhishana, Ravana's brother, repeatedly advised Ravana to return Sita and choose righteousness. When Ravana refused and insulted him, Vibhishana made the difficult choice to leave his brother and kingdom to join Rama, standing for dharma over kin.",
+      "teaching": "When faced with a conflict between duty to loved ones and universal righteousness (dharma), choosing the right path requires immense courage but is ultimately the only way forward.",
+      "character": "Vibhishana"
+    },
+    {
+      "id": "jealousy",
+      "synonymClusters": [
+        { "weight": 3, "words": ["jealous", "envious", "insecure", "bitter"] },
+        { "weight": 2, "words": ["comparing", "resentful", "spiteful"] },
+        { "weight": 1, "words": ["they", "have", "better", "unfair"] }
+      ],
+      "antiKeywords": ["happy", "content", "satisfied", "secure"],
+      "instance": "Manthara poisoning Kaikeyi's mind",
+      "story": "Manthara played upon Queen Kaikeyi's insecurities, stirring intense jealousy regarding Rama's impending coronation. This unchecked jealousy led to the tragedy of Rama's 14-year exile and King Dasharatha's demise.",
+      "teaching": "Jealousy is a potent poison that destroys inner peace and relationships. Guard your mind against toxic influences and be content with your own journey.",
+      "character": "Kaikeyi"
+    },
+    {
+      "id": "sacrifice",
+      "synonymClusters": [
+        { "weight": 3, "words": ["sacrifice", "giveup", "compromise", "selfless"] },
+        { "weight": 2, "words": ["family", "others", "putting", "first"] },
+        { "weight": 1, "words": ["hard", "painful", "let", "go"] }
+      ],
+      "antiKeywords": ["selfish", "mine", "keep", "take"],
+      "instance": "Jatayu's final battle",
+      "story": "The elderly bird king Jatayu fought valiantly against the powerful Ravana to save Sita, knowing he might not survive the encounter. He sacrificed his life defending righteousness.",
+      "teaching": "True nobility lies in standing up for what is right, even when the odds are against you. A life sacrificed for a noble cause becomes immortal.",
+      "character": "Jatayu"
+    },
+    {
+      "id": "impossible",
+      "synonymClusters": [
+        { "weight": 3, "words": ["impossible", "hopeless", "unachievable", "unreachable", "fail", "failing", "lose", "losing"] },
+        { "weight": 2, "words": ["difficult", "mountain", "hard", "struggle", "defeat", "everything"] },
+        { "weight": 1, "words": ["how", "never", "can't", "give", "up"] }
+      ],
+      "antiKeywords": ["easy", "simple", "done", "achieved"],
+      "instance": "Building the Ram Setu",
+      "story": "Bridging the ocean to reach Lanka seemed impossible. The Vanara army achieved it by writing 'Rama' on stones that magically floated, demonstrating the power of faith and collective effort.",
+      "teaching": "No task is impossible when approached with unwavering faith, dedication, and teamwork. Small, persistent efforts can bridge the widest oceans.",
+      "character": "Vanara Sena"
+    },
+    {
+      "id": "loneliness",
+      "synonymClusters": [
+        { "weight": 3, "words": ["lonely", "alone", "isolated", "abandoned"] },
+        { "weight": 2, "words": ["empty", "missing", "nobody", "ignored"] },
+        { "weight": 1, "words": ["dark", "cold", "sad", "friendless"] }
+      ],
+      "antiKeywords": ["popular", "loved", "surrounded", "company"],
+      "instance": "Rama's wandering for Sita",
+      "story": "After Sita was abducted, Rama wandered the forests in deep agony, crying out to the trees and animals. Yet, his profound loneliness did not break his resolve; he built alliances instead of giving up.",
+      "teaching": "Loneliness is a profound ache, but it is not the end. Use solitude to reflect, and actively seek out virtuous connections to guide you back to light.",
+      "character": "Rama"
+    }
+  ],
+  "characters": [
+    {
+      "id": "rama",
+      "name": "Rama",
+      "role": "The seventh avatar of Vishnu, King of Ayodhya, and the central hero of the Ramayana.",
+      "traits": ["Righteous (Dharmic)", "Compassionate", "Ideal Son/King/Husband", "Courageous", "Equanimous"],
+      "imageUrl": "assets/ram_card.png",
+      "teachings": "The paramount importance of upholding Dharma (duty and righteousness) regardless of personal cost. True leadership is servant leadership. Remaining unaffected by extremes of joy and sorrow."
+    },
+    {
+      "id": "sita",
+      "name": "Sita",
+      "role": "An avatar of Goddess Lakshmi, daughter of King Janaka, and beloved wife of Rama.",
+      "traits": ["Devoted", "Resilient", "Pure-hearted", "Courageous", "Sacrificing"],
+      "imageUrl": "assets/sita_card.png",
+      "teachings": "Unwavering devotion and strength in adversity. The power of purity and holding onto one's principles even in the face of grave danger."
+    },
+    {
+      "id": "hanuman",
+      "name": "Hanuman",
+      "role": "A Vanara, an ardent devotee of Rama, and a central figure in the Ramayana.",
+      "traits": ["Devout", "Powerful", "Humble", "Wise", "Selfless"],
+      "imageUrl": "assets/hanuman_card.png",
+      "teachings": "The incredible power of selfless service (Seva) and devotion (Bhakti). True strength is coupled with profound humility. Realizing your infinite potential."
+    },
+    {
+      "id": "lakshmana",
+      "name": "Lakshmana",
+      "role": "Rama's younger brother and constant companion during his exile.",
+      "traits": ["Fiercely Loyal", "Protective", "Quick-tempered but obedient", "Sacrificing"],
+      "imageUrl": "assets/lakshmana.png",
+      "teachings": "The essence of brotherly love and loyalty. The willingness to sacrifice personal comfort for the sake of those you love and look up to."
+    },
+    {
+      "id": "bharata",
+      "name": "Bharata",
+      "role": "Rama's younger brother who ruled Ayodhya as Rama's regent during his exile.",
+      "traits": ["Righteous", "Selfless", "Devoted brother", "Detached"],
+      "imageUrl": "assets/bharata.png",
+      "teachings": "Duty over desire. The rejection of ill-gotten gains and the profound respect for rightful hierarchy and fraternal bonds."
+    },
+    {
+      "id": "ravana",
+      "name": "Ravana",
+      "role": "The powerful Rakshasa (demon) king of Lanka and the primary antagonist.",
+      "traits": ["Learned", "Powerful", "Arrogant (Ahankara)", "Lustful", "Egotistical"],
+      "imageUrl": "assets/ravana.png",
+      "teachings": "A powerful cautionary tale. Intelligence and power, when coupled with unchecked ego and desire, inevitably lead to self-destruction."
+    },
+    {
+      "id": "jatayu",
+      "name": "Jatayu",
+      "role": "A demi-god in the form of a vulture who bravely fought Ravana to rescue Sita.",
+      "traits": ["Brave", "Loyal", "Self-sacrificing", "Righteous"],
+      "imageUrl": "assets/jatayu.png",
+      "teachings": "It is our duty to fight injustice, even against overwhelming odds and at the cost of our own lives. Effort in a noble cause is never wasted."
+    },
+     {
+      "id": "vibhishana",
+      "name": "Vibhishana",
+      "role": "Ravana's righteous younger brother who defected to Rama's side.",
+      "traits": ["Righteous", "Courageous (moral courage)", "Devout", "Wise"],
+      "imageUrl": "assets/vibhishana.png",
+      "teachings": "Dharma (righteousness) supersedes familial bonds. The courage to stand alone against wrong, even when it means opposing one's own kin."
+    }
+  ]
+}

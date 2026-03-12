@@ -1,0 +1,296 @@
+/* --- style.css is now the index.css --- */
+/* Global variables and resets are in global.css */
+
+/* Utility spacing */
+
+/* --- Cover Page --- */
+.cover-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: url('assets/ramayan_bg.png') center/cover no-repeat;
+    transition: transform var(--transition-slow), opacity var(--transition-slow);
+    overflow: hidden; /* Prevent decor bleeding */
+    perspective: 1000px;
+}
+
+.cover-page::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(26, 26, 29, 0.85); /* Dark overlay */
+    z-index: 1;
+}
+
+.cover-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 60px 80px;
+    border: 1px solid rgba(241, 196, 15, 0.3);
+    border-radius: 20px;
+    background: rgba(20, 10, 5, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(241, 196, 15, 0.1);
+}
+
+.book-title {
+    font-family: var(--font-heading);
+    font-size: 5rem;
+    color: transparent;
+    background: linear-gradient(180deg, #F1C40F, #d4af37, #b8860b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 5px;
+    text-shadow: 0px 4px 15px rgba(241, 196, 15, 0.4);
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+
+.book-subtitle {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.book-author {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+    opacity: 0.9;
+    letter-spacing: 2px;
+}
+
+.glow-btn {
+    animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 10px rgba(211, 84, 0, 0.4); }
+    50% { box-shadow: 0 0 25px rgba(241, 196, 15, 0.8), 0 0 50px rgba(241, 196, 15, 0.4); }
+    100% { box-shadow: 0 0 10px rgba(211, 84, 0, 0.4); }
+}
+
+/* --- Decorative Elements --- */
+.mandala-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 900px;
+    opacity: 0.15;
+    z-index: 1;
+    pointer-events: none;
+    animation: slowRotate 120s linear infinite;
+    mix-blend-mode: screen;
+}
+
+@keyframes slowRotate {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.diya-decor {
+    position: absolute;
+    bottom: -50px; /* Adjusted to sink the mask a bit */
+    width: 300px;
+    z-index: 3;
+    pointer-events: none;
+    animation: float 4s ease-in-out infinite;
+    mix-blend-mode: screen;
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 30%, transparent 65%);
+    mask-image: radial-gradient(circle at 50% 50%, black 30%, transparent 65%);
+}
+
+.diya-left {
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.diya-right {
+    right: 5%;
+    transform: scaleX(-1); /* mirror if needed */
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) scaleX(var(--scale-x, 1)); }
+    50% { transform: translateY(-15px) scaleX(var(--scale-x, 1)); }
+    100% { transform: translateY(0px) scaleX(var(--scale-x, 1)); }
+}
+
+.diya-right { --scale-x: -1; }
+
+.cover-page.open {
+    transform: scale(2) translateZ(100px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* --- Main Application --- */
+.app-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.app-header h2 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(241, 196, 15, 0.8);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+.app-header p {
+    color: var(--secondary-color);
+    font-style: italic;
+    font-size: 1.4rem;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.main-app {
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 60px 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s; /* Delay to let cover open */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.main-app::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top, #3E1F00 0%, #1A0D00 40%, #000000 100%),
+                radial-gradient(circle at center, rgba(241, 196, 15, 0.15) 0%, transparent 60%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* --- Main Hub Grid --- */
+.hub-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 0 60px;
+    flex-wrap: wrap;
+}
+
+.hub-card {
+    position: relative;
+    width: 340px;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--text-light);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+    display: flex;
+    align-items: flex-end;
+}
+
+.hub-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(241, 196, 15, 0.3);
+    border-color: var(--secondary-color);
+}
+
+.card-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 1;
+}
+
+.card-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.08);
+    transition: transform 0.6s ease;
+}
+
+.hub-card:hover .card-bg img {
+    transform: scale(1.15);
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
+    width: 100%;
+    transition: background var(--transition-fast);
+}
+
+.hub-card:hover .card-content {
+    background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 80%, transparent 100%);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    display: block;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.hub-card h3 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hub-card p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.4;
+}
+
+@media (max-width: 1100px) {
+    .hub-grid {
+        gap: 20px;
+    }
+    .hub-card {
+        width: 300px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hub-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hub-card {
+        width: 100%;
+        max-width: 400px;
+        height: 380px;
+    }
+}
