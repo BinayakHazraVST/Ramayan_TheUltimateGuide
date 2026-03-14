@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             // If strings are very similar (1 typo allowed for words > 4 chars, 2 for > 6 chars)
                             if ((token.length > 4 && distance <= 1) || (token.length > 6 && distance <= 2)) {
                                 score += (cluster.weight * 0.8);
-                            } else if ((word.startsWith(token) || token.startsWith(word)) && token.length > 2) {
+                            } else if ((word.startsWith(token) || token.startsWith(word)) && Math.abs(word.length - token.length) <= 2 && Math.min(word.length, token.length) >= 3) {
                                 score += (cluster.weight * 0.5);
                             }
                         });
@@ -236,12 +236,8 @@ document.addEventListener('DOMContentLoaded', () => {
             .sort((a, b) => b.score - a.score)
             .slice(0, 3); // Get top 3
 
-        // Universal Fallback if still absolutely 0 results
-        if(results.length === 0) {
-            // Use Rama + Hanuman as universal guidance for lost/struggling souls
-            const fallbackInspirations = ramayanData.inspirations.filter(i => i.id === 'exile' || i.id === 'impossible');
-            results = fallbackInspirations.map(insp => ({ insp, score: 0.1 }));
-        }
+
+        // Removed Universal Fallback so irrelevant queries return 0 results and hit the else block.
 
         if(results.length > 0) {
             inspirationResultsContainer.innerHTML = '';
